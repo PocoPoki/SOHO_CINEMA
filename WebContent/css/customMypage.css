@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.navbar-brand,h1, h2, h3, h4 {
+  font-family: 'Jeju Gothic';
+}
+body {
+  font-family: 'Nanum Gothic';
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.45;
+  font-family: 'Roboto', sans-serif;
+  color: #2d3436;
+  background-color: #f5f6fa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-variant: normal;
+  line-height: 1.25;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.movies__list {
+  margin: 12rem 0;
+}
+
+.movies__list > * + * {
+  margin-top: 8rem;
+}
+
+.movie {
+  border-radius: 6px;
+  background-color: #fff;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 992px) {
+  .movie {
+    padding: 0;
+    flex-flow: column;
+  }
+}
+
+.movie__poster {
+  flex: 0 0 33.333333333%;
+  margin-top: -2rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .movie__poster {
+    flex: 0 0 100%;
+    padding: 0 2rem;
+  }
+}
+
+.movie__poster img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.movie__info {
+  padding: 4rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .movie__info {
+    padding: 2rem;
+  }
+}
+
+.movie__title {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie__title span {
+  font-size: 40%;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  background-color: gold;
+  border-radius: 120rem;
+  opacity: 0.85;
+  vertical-align: middle;
+}
+
+.movie__subtitle {
+  opacity: 0.6;
+  margin-bottom: 2rem;
+}
+
+.movie__des {
+  opacity: 0.85;
+  margin-bottom: 2rem;
+}
+
+.movie__details {
+  list-style-type: none;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+@media only screen and (max-width: 992px) {
+  .movie__details {
+    margin-bottom: 2rem;
+  }
+}
+
+.movie__details strong {
+  font-family: Poppins;
+}
+
+.movie__details li {
+  flex-basis: 50%;
+}
+
+.options {
+  display: flex;
+  margin: 0 -1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .options {
+/*     flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.btn {
+  margin: 0.5rem;
+  padding: 1rem 4rem;
+  border: none;
+  outline: none;
+  border-radius: 120rem;
+  font-weight: 600;
+  font-family: 'Poppins';
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.btn:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.05);
+  transform: translateY(0);
+}
+
+.btn.watch {
+  background-color: red;
+}
+
+.btn.download {
+  background-color: green;
+}
+.footer{
+  background: #152F4F;
+  color:white;
+  
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+}
